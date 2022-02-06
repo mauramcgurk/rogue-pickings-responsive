@@ -141,9 +141,11 @@ header nav ul li a{
 	border-top: 1px solid #eee;
 }
 
-.section-one h3 {
+/* .section-one,
+.section-two,
+.section-three h3 {
 	padding: 10px 0;
-}
+} */
 
 .section-two {
 	border-left: 1px solid #eee;
@@ -194,4 +196,38 @@ footer span {
 	text-transform: lowercase;
 	color: #77a466;
 	font-size: .875em;
+}
+
+/* Breakpoints */
+
+@media all and (min-width:768px) {
+    /* Tablet styles here */
+
+.bottom-section {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-flow: row wrap;
+	border-top: 1px solid #eee;
+}
+
+.section-one,
+.section-two,
+.section-three {
+	flex-basis: 30%;
+	padding-top: 10px;
+}
+
+.section-two {
+	border-left:: 1px solid #eee;
+	border-right: 1px solid #eee;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+}
+
+@media all and (min-width:1200px) {
+    /* Desktop styles here */
+
 }
